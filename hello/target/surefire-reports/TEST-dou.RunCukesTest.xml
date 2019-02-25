@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="dou.RunCukesTest" time="0.026" errors="0" skipped="4">
+<testsuite tests="4" failures="0" name="dou.RunCukesTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
@@ -64,17 +64,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Say hi" name="Given I have a hello app with &quot;Audience!&quot;" time="0.005">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Say hi" name="When I ask it to say hi" time="0.005">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Say hi" name="Then it should answer &quot;Hi audience&quot;" time="0.005">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Say hi" name="Scenario: Say hi" time="0.005">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Say hi" name="Scenario: Say hi" time="0.006"/>
+  <testcase classname="Scenario: Say hi" name="Given I have a hello app with &quot;audience!&quot;" time="0.002"/>
+  <testcase classname="Scenario: Say hi" name="When I ask it to say hi" time="0"/>
+  <testcase classname="Scenario: Say hi" name="Then it should answer &quot;Hi audience!&quot;" time="0"/>
+  <testcase classname="Scenario: Say hi" name="Scenario: Say hi" time="0"/>
 </testsuite>

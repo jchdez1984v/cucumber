@@ -16,7 +16,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "I have a hello app with \"Audience!\"",
+  "name": "I have a hello app with \"audience!\"",
   "keyword": "Given "
 });
 formatter.step({
@@ -26,19 +26,40 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "it should answer \"Hi audience\"",
+  "name": "it should answer \"Hi audience!\"",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "audience!",
+      "offset": 25
+    }
+  ],
+  "location": "StepDefs.i_have_a_hello_app_with(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 70464164,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "StepDefs.i_ask_it_to_say_hi()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 48657,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Hi audience!",
+      "offset": 18
+    }
+  ],
+  "location": "StepDefs.it_should_answer(String)"
+});
+formatter.result({
+  "duration": 1246837,
+  "status": "passed"
 });
 });
