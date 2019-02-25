@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>examples.users.users</title>
+<title>examples.jira.jira</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -172,12 +172,12 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'http://localhost:8080'</div>
-<div class="time-cell passed">0.00285</div>
+<div class="time-cell passed">0.00251</div>
 </div>
-<div class="preformatted">21:18:58.375 karate.env system property was: null</div>
+<div class="preformatted">10:12:50.781 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">* def user =</div>
-<div class="time-cell passed">0.063705</div>
+<div class="time-cell passed">0.0591</div>
 </div>
 <div class="preformatted">{
     "username": "Juan.hernandez",
@@ -185,17 +185,17 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'rest/auth/1/session'</div>
-<div class="time-cell passed">0.002965</div>
+<div class="time-cell passed">0.00281</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request user</div>
-<div class="time-cell passed">0.000051</div>
+<div class="time-cell passed">0.00004</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.559147</div>
+<div class="time-cell passed">3.03645</div>
 </div>
-<div class="preformatted">21:18:58.905 request:
+<div class="preformatted">10:12:51.229 request:
 1 &gt; POST http://localhost:8080/rest/auth/1/session
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -205,39 +205,39 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202-ea)
 {"username":"Juan.hernandez","password":"vico2018"}
 
-21:18:59.009 response time in milliseconds: 100.87
+10:12:53.886 response time in milliseconds: 2653.68
 1 &lt; 200
 1 &lt; Cache-Control: no-cache, no-store, no-transform
 1 &lt; Content-Security-Policy: frame-ancestors 'self'
 1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Date: Mon, 25 Feb 2019 03:18:58 GMT
-1 &lt; Set-Cookie: [atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_0d7f9809b8f94d4fdd543e7272d41d3499d83690_lout; Path=/, JSESSIONID=AD4FD3F8F98AD215813880BC1982CE5F; Path=/; HttpOnly]
+1 &lt; Date: Mon, 25 Feb 2019 16:12:53 GMT
+1 &lt; Set-Cookie: [atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_9bcaec0458526b1f10985d405859f8290ba9dca7_lout; Path=/, JSESSIONID=778D80911F69DFB8028BF159F55D62F9; Path=/; HttpOnly]
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: User-Agent
-1 &lt; X-AREQUESTID: 1278x43x1
+1 &lt; X-AREQUESTID: 612x2x1
 1 &lt; X-ASEN: SEN-L13099496
 1 &lt; X-AUSERNAME: anonymous
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Seraph-LoginReason: OK
 1 &lt; X-XSS-Protection: 1; mode=block
-{"session":{"name":"JSESSIONID","value":"AD4FD3F8F98AD215813880BC1982CE5F"},"loginInfo":{"loginCount":26,"previousLoginTime":"2019-02-24T21:15:29.372-0600"}}</div>
+{"session":{"name":"JSESSIONID","value":"778D80911F69DFB8028BF159F55D62F9"},"loginInfo":{"loginCount":28,"previousLoginTime":"2019-02-24T21:20:10.481-0600"}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000021</div>
+<div class="time-cell passed">0.000018</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def id = response.session.value</div>
-<div class="time-cell passed">0.013202</div>
+<div class="time-cell passed">0.009609</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then print id</div>
-<div class="time-cell passed">0.000541</div>
+<div class="time-cell passed">0.000409</div>
 </div>
-<div class="preformatted">21:18:59.025 [print] AD4FD3F8F98AD215813880BC1982CE5F</div>
+<div class="preformatted">10:12:53.897 [print] 778D80911F69DFB8028BF159F55D62F9</div>
 <div class="step-row">
 <div class="step-cell passed">* def issue =</div>
-<div class="time-cell passed">0.000165</div>
+<div class="time-cell passed">0.000132</div>
 </div>
 <div class="preformatted">{
 	"fields": {
@@ -253,15 +253,15 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def cookie = "JSESSIONID=&lt;replaceMe&gt;"</div>
-<div class="time-cell passed">0.002396</div>
+<div class="time-cell passed">0.002012</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* replace cookie.replaceMe = id</div>
-<div class="time-cell passed">0.000231</div>
+<div class="time-cell passed">0.000208</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'rest/api/2/issue'</div>
-<div class="time-cell passed">0.002219</div>
+<div class="time-cell passed">0.00215</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request issue</div>
@@ -269,82 +269,82 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">And header Cookie = '#cookie'</div>
-<div class="time-cell passed">0.002387</div>
+<div class="time-cell passed">0.002149</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.115255</div>
+<div class="time-cell passed">1.693718</div>
 </div>
-<div class="preformatted">21:18:59.036 request:
+<div class="preformatted">10:12:53.907 request:
 2 &gt; POST http://localhost:8080/rest/api/2/issue
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Content-Length: 135
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Cookie: [#cookie, JSESSIONID=AD4FD3F8F98AD215813880BC1982CE5F; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_0d7f9809b8f94d4fdd543e7272d41d3499d83690_lout]
+2 &gt; Cookie: [#cookie, JSESSIONID=778D80911F69DFB8028BF159F55D62F9; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_9bcaec0458526b1f10985d405859f8290ba9dca7_lout]
 2 &gt; Host: localhost:8080
 2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202-ea)
 {"fields":{"project":{"key":"RES"},"summary":"credit card defect","description":"creating my first defect","issuetype":{"name":"Bug"}}}
 
-21:18:59.148 response time in milliseconds: 110.99
+10:12:55.598 response time in milliseconds: 1686.59
 2 &lt; 201
 2 &lt; Cache-Control: no-cache, no-store, no-transform
 2 &lt; Content-Security-Policy: frame-ancestors 'self'
 2 &lt; Content-Type: application/json;charset=UTF-8
-2 &lt; Date: Mon, 25 Feb 2019 03:18:58 GMT
-2 &lt; Set-Cookie: atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_dca5ed9ea2393de267af9aefee5e70eb52a72535_lin; Path=/
+2 &lt; Date: Mon, 25 Feb 2019 16:12:55 GMT
+2 &lt; Set-Cookie: atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_8df353353ea565b393184610cb366720f1e5a177_lin; Path=/
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Vary: User-Agent
-2 &lt; X-AREQUESTID: 1278x44x1
+2 &lt; X-AREQUESTID: 612x3x1
 2 &lt; X-ASEN: SEN-L13099496
-2 &lt; X-ASESSIONID: 1qtb8ly
+2 &lt; X-ASESSIONID: od5hz3
 2 &lt; X-AUSERNAME: Juan.hernandez
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-Frame-Options: SAMEORIGIN
 2 &lt; X-Seraph-LoginReason: OK
 2 &lt; X-XSS-Protection: 1; mode=block
-{"id":"10201","key":"RES-9","self":"http://localhost:8080/rest/api/2/issue/10201"}</div>
+{"id":"10300","key":"RES-10","self":"http://localhost:8080/rest/api/2/issue/10300"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000015</div>
+<div class="time-cell passed">0.000009</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def issueid = response.id</div>
-<div class="time-cell passed">0.005694</div>
+<div class="time-cell passed">0.003616</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def issuePath = 'rest/api/2/issue/&lt;replaceId&gt;'</div>
-<div class="time-cell passed">0.003509</div>
+<div class="time-cell passed">0.002576</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* replace issuePath.replaceId = issueid</div>
-<div class="time-cell passed">0.000172</div>
+<div class="time-cell passed">0.000107</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path issuePath</div>
-<div class="time-cell passed">0.000025</div>
+<div class="time-cell passed">0.000016</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method delete</div>
-<div class="time-cell passed">0.336646</div>
+<div class="time-cell passed">0.105135</div>
 </div>
-<div class="preformatted">21:18:59.161 request:
-3 &gt; DELETE http://localhost:8080/rest/api/2/issue/10201
+<div class="preformatted">10:12:55.607 request:
+3 &gt; DELETE http://localhost:8080/rest/api/2/issue/10300
 3 &gt; Accept-Encoding: gzip,deflate
 3 &gt; Connection: Keep-Alive
-3 &gt; Cookie: JSESSIONID=AD4FD3F8F98AD215813880BC1982CE5F; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_dca5ed9ea2393de267af9aefee5e70eb52a72535_lin
+3 &gt; Cookie: JSESSIONID=778D80911F69DFB8028BF159F55D62F9; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_8df353353ea565b393184610cb366720f1e5a177_lin
 3 &gt; Host: localhost:8080
 3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202-ea)
 
-21:18:59.495 response time in milliseconds: 333.48
+10:12:55.710 response time in milliseconds: 102.66
 3 &lt; 204
 3 &lt; Cache-Control: no-cache, no-store, no-transform
 3 &lt; Content-Security-Policy: frame-ancestors 'self'
 3 &lt; Content-Type: application/json;charset=UTF-8
-3 &lt; Date: Mon, 25 Feb 2019 03:18:58 GMT
-3 &lt; X-AREQUESTID: 1278x45x1
+3 &lt; Date: Mon, 25 Feb 2019 16:12:55 GMT
+3 &lt; X-AREQUESTID: 612x4x1
 3 &lt; X-ASEN: SEN-L13099496
-3 &lt; X-ASESSIONID: 1qtb8ly
+3 &lt; X-ASESSIONID: od5hz3
 3 &lt; X-AUSERNAME: Juan.hernandez
 3 &lt; X-Content-Type-Options: nosniff
 3 &lt; X-Frame-Options: SAMEORIGIN
@@ -352,7 +352,7 @@
 3 &lt; X-XSS-Protection: 1; mode=block</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 204</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.00001</div>
 </div>
 </div>
 </div>

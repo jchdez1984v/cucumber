@@ -1,5 +1,5 @@
-21:18:58.370 [main] INFO  com.intuit.karate - karate.env system property was: null 
-21:18:58.905 [main] DEBUG com.intuit.karate - request:
+10:12:50.778 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:12:51.229 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:8080/rest/auth/1/session
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -9,72 +9,72 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202-ea)
 {"username":"Juan.hernandez","password":"vico2018"}
 
-21:18:59.009 [main] DEBUG com.intuit.karate - response time in milliseconds: 100.87
+10:12:53.885 [main] DEBUG com.intuit.karate - response time in milliseconds: 2653.68
 1 < 200
 1 < Cache-Control: no-cache, no-store, no-transform
 1 < Content-Security-Policy: frame-ancestors 'self'
 1 < Content-Type: application/json;charset=UTF-8
-1 < Date: Mon, 25 Feb 2019 03:18:58 GMT
-1 < Set-Cookie: [atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_0d7f9809b8f94d4fdd543e7272d41d3499d83690_lout; Path=/, JSESSIONID=AD4FD3F8F98AD215813880BC1982CE5F; Path=/; HttpOnly]
+1 < Date: Mon, 25 Feb 2019 16:12:53 GMT
+1 < Set-Cookie: [atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_9bcaec0458526b1f10985d405859f8290ba9dca7_lout; Path=/, JSESSIONID=778D80911F69DFB8028BF159F55D62F9; Path=/; HttpOnly]
 1 < Transfer-Encoding: chunked
 1 < Vary: User-Agent
-1 < X-AREQUESTID: 1278x43x1
+1 < X-AREQUESTID: 612x2x1
 1 < X-ASEN: SEN-L13099496
 1 < X-AUSERNAME: anonymous
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Seraph-LoginReason: OK
 1 < X-XSS-Protection: 1; mode=block
-{"session":{"name":"JSESSIONID","value":"AD4FD3F8F98AD215813880BC1982CE5F"},"loginInfo":{"loginCount":26,"previousLoginTime":"2019-02-24T21:15:29.372-0600"}}
+{"session":{"name":"JSESSIONID","value":"778D80911F69DFB8028BF159F55D62F9"},"loginInfo":{"loginCount":28,"previousLoginTime":"2019-02-24T21:20:10.481-0600"}}
 
-21:18:59.025 [main] INFO  com.intuit.karate - [print] AD4FD3F8F98AD215813880BC1982CE5F
-21:18:59.035 [main] DEBUG com.intuit.karate - request:
+10:12:53.897 [main] INFO  com.intuit.karate - [print] 778D80911F69DFB8028BF159F55D62F9
+10:12:53.907 [main] DEBUG com.intuit.karate - request:
 2 > POST http://localhost:8080/rest/api/2/issue
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Content-Length: 135
 2 > Content-Type: application/json; charset=UTF-8
-2 > Cookie: [#cookie, JSESSIONID=AD4FD3F8F98AD215813880BC1982CE5F; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_0d7f9809b8f94d4fdd543e7272d41d3499d83690_lout]
+2 > Cookie: [#cookie, JSESSIONID=778D80911F69DFB8028BF159F55D62F9; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_9bcaec0458526b1f10985d405859f8290ba9dca7_lout]
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202-ea)
 {"fields":{"project":{"key":"RES"},"summary":"credit card defect","description":"creating my first defect","issuetype":{"name":"Bug"}}}
 
-21:18:59.148 [main] DEBUG com.intuit.karate - response time in milliseconds: 110.99
+10:12:55.598 [main] DEBUG com.intuit.karate - response time in milliseconds: 1686.59
 2 < 201
 2 < Cache-Control: no-cache, no-store, no-transform
 2 < Content-Security-Policy: frame-ancestors 'self'
 2 < Content-Type: application/json;charset=UTF-8
-2 < Date: Mon, 25 Feb 2019 03:18:58 GMT
-2 < Set-Cookie: atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_dca5ed9ea2393de267af9aefee5e70eb52a72535_lin; Path=/
+2 < Date: Mon, 25 Feb 2019 16:12:55 GMT
+2 < Set-Cookie: atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_8df353353ea565b393184610cb366720f1e5a177_lin; Path=/
 2 < Transfer-Encoding: chunked
 2 < Vary: User-Agent
-2 < X-AREQUESTID: 1278x44x1
+2 < X-AREQUESTID: 612x3x1
 2 < X-ASEN: SEN-L13099496
-2 < X-ASESSIONID: 1qtb8ly
+2 < X-ASESSIONID: od5hz3
 2 < X-AUSERNAME: Juan.hernandez
 2 < X-Content-Type-Options: nosniff
 2 < X-Frame-Options: SAMEORIGIN
 2 < X-Seraph-LoginReason: OK
 2 < X-XSS-Protection: 1; mode=block
-{"id":"10201","key":"RES-9","self":"http://localhost:8080/rest/api/2/issue/10201"}
+{"id":"10300","key":"RES-10","self":"http://localhost:8080/rest/api/2/issue/10300"}
 
-21:18:59.161 [main] DEBUG com.intuit.karate - request:
-3 > DELETE http://localhost:8080/rest/api/2/issue/10201
+10:12:55.607 [main] DEBUG com.intuit.karate - request:
+3 > DELETE http://localhost:8080/rest/api/2/issue/10300
 3 > Accept-Encoding: gzip,deflate
 3 > Connection: Keep-Alive
-3 > Cookie: JSESSIONID=AD4FD3F8F98AD215813880BC1982CE5F; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_dca5ed9ea2393de267af9aefee5e70eb52a72535_lin
+3 > Cookie: JSESSIONID=778D80911F69DFB8028BF159F55D62F9; atlassian.xsrf.token=BFCR-3V8W-UBCQ-LRCD_8df353353ea565b393184610cb366720f1e5a177_lin
 3 > Host: localhost:8080
 3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202-ea)
 
-21:18:59.495 [main] DEBUG com.intuit.karate - response time in milliseconds: 333.48
+10:12:55.710 [main] DEBUG com.intuit.karate - response time in milliseconds: 102.66
 3 < 204
 3 < Cache-Control: no-cache, no-store, no-transform
 3 < Content-Security-Policy: frame-ancestors 'self'
 3 < Content-Type: application/json;charset=UTF-8
-3 < Date: Mon, 25 Feb 2019 03:18:58 GMT
-3 < X-AREQUESTID: 1278x45x1
+3 < Date: Mon, 25 Feb 2019 16:12:55 GMT
+3 < X-AREQUESTID: 612x4x1
 3 < X-ASEN: SEN-L13099496
-3 < X-ASESSIONID: 1qtb8ly
+3 < X-ASESSIONID: od5hz3
 3 < X-AUSERNAME: Juan.hernandez
 3 < X-Content-Type-Options: nosniff
 3 < X-Frame-Options: SAMEORIGIN
